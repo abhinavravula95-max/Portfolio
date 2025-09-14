@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Reddy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Abhinav Reddy</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <div class="typewriter">Creative Web Developer</div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <!-- Make sure to use a valid image path or use a relative/hosted image URL -->
+            <img src="images/abhi.png" alt="Abhinav Reddy" class="profile-photo">
+            <p><b>Hi, I'm Abhinav Reddy, a passionate web developer with a flair for creating visually stunning and interactive websites. With 1 year of experience in HTML, CSS, JavaScript, and React, I craft digital experiences that blend functionality with artistry. Let’s build something extraordinary!</b></p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-front">
+                        <h3><u>Project One</u></h3>
+                        <p>Motion Based Motorised Camera System</p>
+                    </div>
+                    <div class="project-back">
+                        <p>Upgrade your home security camera or webcam with a motorized stand that will detect and follow any motion around the camera and it is useful for many people at night time and people will be aware of thief and strangers. It will guard our home at any time and it will be helpful for so many people.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-front">
+                        <h3><u>Project Two</u></h3>
+                        <p>Smart Geyser</p>
+                    </div>
+                    <div class="project-back">
+                        <p>A smart geyser can be controlled remotely using mobile apps or voice assistants. It allows scheduled heating and temperature control for convenience. Helps in energy optimization and reduces electricity bills. Comes with safety features like auto cut-off, dry heating protection, and leakage detection. Provides real-time usage insights for better monitoring and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-front">
+                        <h3><u>Project Three</u></h3>
+                        <p>AI Music Composition System</p>
+                    </div>
+                    <div class="project-back">
+                        <p>Uses machine learning models to generate original melodies, harmonies, and rhythms. Can compose music in different genres and styles based on user input. Provides real-time suggestions or complete tracks for musicians and creators. Helps in saving time and boosting creativity by automating music generation. Can integrate with MIDI and audio tools for producing realistic sound outputs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p style="margin-top: 1rem;">Or reach me at: 
+            <a href="mailto:abhinavravula95@gmail.com">abhinavravula95@gmail.com</a> |
+            <a href="http://linkedin.com/in/ravula-abhinav-reddy-8776a9334/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/abhinavravula95-max" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Abhinav Reddy. Crafted with Creativity And Passion.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Demo contact form handler
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Form submitted! (This is a demo - add your own backend logic.)');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
